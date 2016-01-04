@@ -1,0 +1,29 @@
+{
+  "name": "the_more_you_know",
+  "version": "1.0.0",
+  "description": "The More You Know will populate a list of fun facts for amusement",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kartikvempati/2015-11-mvp.git"
+  },
+  "keywords": [
+    "reddit",
+    "API",
+    "todayilearned",
+    "fun",
+    "facts",
+    "node",
+    "express",
+    "mysql"
+  ],
+  "author": "Kartik Vempati",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kartikvempati/2015-11-mvp/issues"
+  },
+  "homepage": "https://github.com/kartikvempati/2015-11-mvp#readme"
+}

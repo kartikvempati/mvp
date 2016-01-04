@@ -17,28 +17,42 @@ Once the project moves into development, the press release can be used as a touc
  -->
  
 ## Heading ##
-  > Name the product in a way the reader (i.e. your target customers) will understand.
+  > The More You Know
 
 ## Sub-Heading ##
   > Describe who the market for the product is and what benefit they get. One sentence only underneath the title.
 
+  Learn something new every day (or hour...)!
+
 ## Summary ##
   > Give a summary of the product and the benefit. Assume the reader will not read anything else so make this paragraph good.
 
+  The More You Know will populate a list of fun facts for amusement
+
 ## Problem ##
   > Describe the problem your product solves.
+  Bored at work? Want to sound interesting? This product is for you!
 
 ## Solution ##
   > Describe how your product elegantly solves the problem.
 
+  Produces a simple, easy to read list of facts! No navigation. Provides links for sources if you want to learn more!
+
 ## Quote from You ##
   > A quote from a spokesperson in your company.
 
+  "Kept me busy for about 10 minutes. 10/10. Would use again."
+
 ## How to Get Started ##
   > Describe how easy it is to get started.
+  Just go to the website and start reading. 
 
 ## Customer Quote ##
   > Provide a quote from a hypothetical customer that describes how they experienced the benefit.
 
+  "This app has made me seem so much smarter around my friends."
+
 ## Closing and Call to Action ##
   > Wrap it up and give pointers where the reader should go next.
+
+  "In the future, we hope to email you these daily facts rather than have you visiting the page. Soon, all you'll have to do is check your phone and you'll seem so much more knowledgeable"

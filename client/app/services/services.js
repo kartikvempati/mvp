@@ -5,9 +5,10 @@ angular.module('til.services', [])
   var getFacts = function() {
   	return $http({
       method: 'GET',
-      url: '/',
+      url: '/api/facts',
     }).then(function (resp) {
-      return resp
+      console.log(resp);
+      return resp;
     });
   }  
 

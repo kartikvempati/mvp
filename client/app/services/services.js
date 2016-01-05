@@ -7,7 +7,6 @@ angular.module('til.services', [])
       method: 'GET',
       url: '/api/facts',
     }).then(function (resp) {
-      console.log(resp);
       return resp;
     });
   }  

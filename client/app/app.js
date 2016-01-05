@@ -1,12 +1,11 @@
 angular.module('til',['til.facts',
   'til.services',
-  'ngRoute'
-  ])
+  'ngRoute'])
 
-.config(function($routeProvider, $httpProvider) {
+.config(function ($routeProvider, $httpProvider) {
 	$routeProvider
     .when('/', {
-      templateURL: 'app/facts/facts.html',
+      templateUrl: 'app/facts/facts.html',
       controller: 'FactsController'
     })
 })

@@ -1,5 +1,9 @@
 <!-- important keys from the facts.json file: posts = JSON.parse(body).data.children.slice(1)[x].data.[title, url] -->
-<!DOCTYPE html>
-<div id = 'container' ng-controller='FactsController'>
-HELLO WORLD 
+
+<div id = 'container' ng-controller='FactsController' ng-model='facts'>
+  <div ng-repeat='x in facts.body'>
+  {{ x.data.title }} 
+
+  {{ x.data.url }}
+  </div>
 </div>

@@ -11,7 +11,12 @@ var app = express();
 //  next();
 // })
 
-app.use(express.static(__dirname+"/../client/"));
+// app.use(parser.json({ type: 'application/json'}));
+// app.use(parser.urlencoded({extended:true}));
+
+app.use(express.static(__dirname+"/client"));
+
+// require('./client/app/app.js');
 
 // app.get('/', ///serve index.html)
 app.get('/api/facts', function (req, res) {

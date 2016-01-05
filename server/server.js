@@ -1,7 +1,6 @@
 var express = require('express');
 var parser = require('body-parser');
-var Client = require('node-rest-client').Client;
-
+var request = require('request');
 var app = express();
 
 
@@ -14,11 +13,12 @@ app.use(function(req, res, next) {
 })
 
 app.get('/', function (req, res) {
-	client = new Client();
-	client.get("https://www.reddit.com/r/todayilearned/hot.json?limit=10", function (data, response){
-		res.end(data);
-	});
-
+	request('https://www.reddit.com/r/todayilearned/hot.json?limit=10',function (err, response, body) {
+		if (!err && response.statusCode === 200) {
+			console.log(JSON.parse(body).data.children);
+			res.send(JSON.parse(body));
+		}
+	})
 });
 
 module.exports = app;

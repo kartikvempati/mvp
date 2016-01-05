@@ -13,12 +13,8 @@ app.listen(8000);
 // })
 
 app.get('/', function (req, res) {
-	request('https://www.reddit.com/r/todayilearned/hot.json?limit=25',function (err, response, body) {
-		if (!err && response.statusCode === 200) {
-			var posts = JSON.parse(body).data.children.slice(1);
-			res.send(posts[8].data.title)
-		}
-	})
+	request.get('https://www.reddit.com/r/todayilearned/hot.json?limit=25')
+    .pipe(res)
 });
 
 module.exports = app;

@@ -1,4 +1,4 @@
-angular.module('til',['factsController',
+angular.module('til',['FactsController',
   'ngRoute'
   ])
 

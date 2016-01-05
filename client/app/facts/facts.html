@@ -3,7 +3,8 @@
 <div id = 'container' ng-controller='FactsController' ng-model='facts'>
   <div ng-repeat='x in facts.body'>
   {{ x.data.title }} 
-
-  {{ x.data.url }}
+  <br>
+  <a href = "{{ x.data.url }}"> Want to Learn more?</a>
+  <br><br>
   </div>
 </div>

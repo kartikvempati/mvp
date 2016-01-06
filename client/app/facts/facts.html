@@ -1,12 +1,12 @@
 <!-- important keys from the facts.json file: posts = JSON.parse(body).data.children.slice(1)[x].data.[title, url] -->
 
 <div id = 'container' ng-controller='FactsController' ng-model='facts'>
-  <div ng-repeat='x in facts.body'>
-  {{ x.data.title }} 
-  <br>
-  <a href = "{{ x.data.url }}"> Want to Learn more?</a>
-  <br>
-  <img src = "{{x.data.thumbnail}}">
-  <br><br>
+  <div class = "factbox" ng-repeat='x in facts.body'>
+	    <img src = "{{x.data.thumbnail}}" class = 'thumbnail'>
+	    <div class = 'fact'> {{ x.data.title }} </div>
+	    <br>
+	    <a href = "{{ x.data.url }}" class = 'source'> Want to learn more?</a>
+	    <br>
+	    <br><br>
   </div>
 </div>

@@ -1,13 +1,14 @@
 <!-- important keys from the facts.json file: posts = JSON.parse(body).data.children.slice(1)[x].data.[title, url] -->
 
 <div id = 'container' ng-controller='FactsController' ng-model='facts'>
-  <div class = "factbox" ng-repeat='x in facts.body'>
+  <input type ='text' name = 'search' ng-model = 'search'>
+  <div class = "factbox" ng-repeat='x in facts.body | filter:search'>
 	    <img src = "{{x.data.thumbnail}}" class = 'thumbnail'>
 	    <div class = 'fact'> {{ x.data.title }} </div>
 	    <br>
 	    <a href = "{{ x.data.url }}" class = 'source'>
 	    	Want to learn more?
-	    </a>
+	    </a>so many retarded 
 	    <br>
 	    <br><br>
   </div>
